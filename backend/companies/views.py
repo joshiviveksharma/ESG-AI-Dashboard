@@ -1,0 +1,10 @@
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .models import Company
+from .serializers import CompanySerializer
+
+@api_view(['GET'])
+def company_list(request):
+    companies = Company.objects.all()
+    serializer = CompanySerializer(companies, many=True)
+    return Response(serializer.data)

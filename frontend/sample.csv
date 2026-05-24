@@ -1,0 +1,4 @@
+company,scope,activity_type,emissions_kg_co2e,approval_status,source_type
+Tesla,Scope 1,Manufacturing,1000,Approved,SAP
+Google,Scope 2,Electricity Usage,700,Approved,UTILITY
+Tata Steel,Scope 3,Business Travel,1500,Approved,TRAVEL
